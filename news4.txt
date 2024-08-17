@@ -1,3 +1,4 @@
+mom mom mom
 git stash
 git checkout other-branch
 # Do your work on the other branch
