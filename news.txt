@@ -1,0 +1,5 @@
+git stash
+git checkout other-branch
+# Do your work on the other branch
+git checkout your-branch
+git stash pop
