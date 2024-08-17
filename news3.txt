@@ -1,4 +1,33 @@
 
-New version: v.0.0.10
-
+New version: v.0.0.11
+patch: 
+  - op: replace
+    path: /metadata/name
+    value: before-rmsreservation
+    namespace: moh-uat
+  - op: add
+    path: /spec/template/spec/containers/0/env/-
+    value:
+      name: CSI_MODULENAME
+      value: "csi-rms-reservation-java-sev"
+  - op: add
+    path: /spec/template/spec/containers/0/env/-
+    value:
+      name: CSI_DATA_VERSION
+      value: "AMD-10579"
+  - op: add
+    path: /spec/template/spec/containers/0/env/-
+    value:
+      name: CSI_PROJECT_NAME
+      value: "csi-rms-reservation-java-sev"
+  - op: add
+    path: /spec/template/spec/containers/0/env/-
+    value:
+      name: CSI_MODULE_NAME
+      value: "rmsreservation"
+  - op: add
+    path: /spec/template/spec/containers/0/env/-
+    value:
+      name: CSI_PARENT_MODULE_NAME
+      value: "rms"
 
