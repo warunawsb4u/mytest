@@ -1,13 +1,4 @@
 
 New version: v.0.0.10
-patch: 
-  - op: replace
-    path: /metadata/name
-    value: before-rmsreservation
-    namespace: moh-uat
-  - op: add
-    path: /spec/template/spec/containers/0/env/-
-    value:
-      name: CSI_MODULENAME
-      value: "csi-rms-reservation-java-sev"
+
 
